@@ -12,135 +12,196 @@
 
 <body>
   <div class="navbar__bg">
-    <nav class="navbar container">
+    <header class="navbar container">
       <div class="navbar__leftside">
-        <img class="navbar__leftside__logo" src="img/mainpage/navbar_leftside_logo.svg" alt="logo">
+        <a class="navbar__leftside__gohome" href="index.html">
+          <img class="navbar__leftside__logo" src="img/mainpage/navbar_leftside_logo.svg" alt="logo">
+        </a>
         <img src="img/mainpage/navbar_leftside_search.svg" alt="magnifier" class="navbar__leftside__serch__img">
         <input type="text" class="navbar__leftside__search">
       </div>
       <div class="navbar__rightside">
         <button class="navbar__rightside__menu navbar_btn">
-          <img src="img/mainpage/navbar_rightside_menu.svg" alt="menu">
+          <div class="navbar__rightside__menu__burger"><span></span></div>
+          <!--<img src="img/mainpage/navbar_rightside_menu.svg" alt="menu">-->
         </button>
-
+        <nav class="popup__menu">
+          <button class="popup__menu__closer"></button>
+          <h5 class="popup__menu__title">Menu</h5>
+          <h5 class="popup__menu__subtitle">man</h5>
+          <ul class="popup__menu__list">
+            <li class="popup__menu__item">Accesories</li>
+            <li class="popup__menu__item">Bags</li>
+            <li class="popup__menu__item">Denim</li>
+            <li class="popup__menu__item">T-Shirts</li>
+          </ul>
+          <h5 class="popup__menu__subtitle">woman</h5>
+          <ul class="popup__menu__list">
+            <li class="popup__menu__item">Accesories</li>
+            <li class="popup__menu__item">Jackets & Coats</li>
+            <li class="popup__menu__item">Polos</li>
+            <li class="popup__menu__item">T-Shirts</li>
+            <li class="popup__menu__item">Shirts</li>
+          </ul>
+          <h5 class="popup__menu__subtitle">kids</h5>
+          <ul class="popup__menu__list">
+            <li class="popup__menu__item">Accesories</li>
+            <li class="popup__menu__item">Jackets & Coats</li>
+            <li class="popup__menu__item">Polos</li>
+            <li class="popup__menu__item">T-Shirts</li>
+            <li class="popup__menu__item">Shirts</li>
+            <li class="popup__menu__item">Bags</li>
+          </ul>
+        </nav>
         <button class="navbar__rightside__account navbar_btn">
           <img src="img/mainpage/navbar_rightside_account.svg" alt="account">
         </button>
-
         <button class="navbar__rightside__cart navbar_btn">
           <img class="navbar__rightside__cart__img" src="img/mainpage/navbar_rightside_cart.svg" alt="cart">
           <span class="navbar__rightside__cart__badge">5</span>
         </button>
       </div>
-    </nav>
+    </header>
   </div>
-  <header class="header">
-    <section class="header__inner container">
-      <div class="header__inner__left"></div>
-      <div class="header__inner__right">
-        <div class="header__inner__rectangle"></div>
-        <div class="header__inner__text">
-          <h1 class="header__inner__title">THE BRAND</h1>
-          <h3 class="header__inner__subtitle">OF LUXERIOUS <span class="header__inner__subtitle__red">
-              FASHION</span>
-          </h3>
-        </div>
-      </div>
-    </section>
-  </header>
   <main class="main">
+    <div class="header__inner__bg">
+      <section class="header__inner container">
+        <div class="header__inner__left"></div>
+        <div class="header__inner__right">
+          <div class="header__inner__rectangle"></div>
+          <div class="header__inner__text">
+            <h1 class="header__inner__title">THE BRAND</h1>
+            <h3 class="header__inner__subtitle">OF LUXERIOUS <span class="header__inner__subtitle__red">
+                FASHION</span>
+            </h3>
+          </div>
+        </div>
+      </section>
+    </div>
     <section class="categories container">
       <div class="categories__box">
-        <div class="categories__box__item">
-          <img class="categories__item__img" src="img/mainpage/categories_for_woman.jpg" alt="for_woman">
+        <article class="categories__box__item for_woman">
           <div class="categories__item__text">
             <p class="categories__item__promo">30% off</p>
             <h3 class="categories__item__title">for women</h3>
           </div>
-        </div>
-        <div class="categories__box__item">
-          <img class="categories__item__img" src="img/mainpage/categories_for_man.jpg" alt="for_man">
+        </article>
+        <article class="categories__box__item for_man">
           <div class="categories__item__text">
             <p class="categories__item__promo">hot deal</p>
             <h3 class="categories__item__title">for men</h3>
           </div>
-        </div>
-        <div class="categories__box__item">
-          <img class="categories__item__img" src="img/mainpage/categories_for_kids.jpg" alt="for_kids">
+        </article>
+        <article class="categories__box__item for_kids">
           <div class="categories__item__text">
             <p class="categories__item__promo">new arrivals</p>
             <h3 class="categories__item__title">for kids</h3>
           </div>
-        </div>
+        </article>
       </div>
-      <div class="categories__item__bottom">
-        <img class="categories__item__img" src="img/mainpage/categories_accesories.jpg" alt="accesories">
-        <div class="categories__item__text__bottom">
+      <article class="categories__item__bottom">
+        <div class="categories__item__text">
           <p class="categories__item__promo">
             LUXERIOUS & trendy</p>
           <h3 class="categories__item__title">
             Accesories</h3>
         </div>
-      </div>
+      </article>
     </section>
     <section class="fetured container">
       <h3 class="fetured__title">Fetured Items</h3>
       <p class="fetured__title__description">Shop for items based on what we featured in this week</p>
       <div class="fetured__item__box container">
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_1.jpg" alt="fetured">
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_1.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_2.jpg" alt="fetured">
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" alt="cartimg"
+              src="img/mainpage/fetured_item_hover_btn_img.svg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_2.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_3.jpg" alt="fetured">
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" alt="cartimg"
+              src="img/mainpage/fetured_item_hover_btn_img.svg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_3.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_4.jpg" alt="fetured">
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" alt="cartimg"
+              src="img/mainpage/fetured_item_hover_btn_img.svg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_4.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_5.jpg" alt="fetured">
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" alt="cartimg"
+              src="img/mainpage/fetured_item_hover_btn_img.svg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_5.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
-        <div class="featured__item">
-          <img class="featured__item__img" src="img/mainpage/fetured_item_img_6.jpg" alt="fetured">
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" src="img/mainpage/fetured_item_hover_btn_img.svg"
+              alt="cartimg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
+        <article class="featured__item">
+          <img class="featured__item__img" src="img/mainpage/fetured_item_img_6.jpg" alt="fetured" width="360"
+            height="420">
           <div class="featured__item__text">
             <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
             <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian arbiter
               of cool Kym Ellery teams up with Moda Operandi.</p>
             <p class="featured__item__price">$52.00</p>
           </div>
-        </div>
+          <button class="featured__item__hover__btn">
+            <img class="featured__item__hover__btn__cartimg" alt="cartimg"
+              src="img/mainpage/fetured_item_hover_btn_img.svg">
+            <span>Add to Cart</span>
+          </button>
+        </article>
       </div>
       <button class="fetured__button">Browse All Products</button>
     </section>
