@@ -395,7 +395,6 @@ header, main, footer{
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  min-height: 1192px;
 }
 .featured__item {
   position: relative;
@@ -667,16 +666,8 @@ header, main, footer{
 .pink:active {
   color: #f16d7f;
 }
-.catalogue__item__box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  min-height: 1192px;  
-}
-
-/* SORT<------------------------------------- */
-/* sort_filter <---------------------------- */
+/* SORT <--------------------------------- */
+/* sort_filter <-------------------------- */
 .sort {
   height: 132px;
   display: flex;
@@ -1083,4 +1074,13 @@ header, main, footer{
   top: 4px;
   left: -4px;
 }
-
+.checkout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.checkout__lists{
+  display: flex;
+  justify-content: center;
+}
