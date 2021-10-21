@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <div class="navbar__leftside">
         <a class="navbar__leftside__gohome"><img src="img/catalogue/navbar_logo.png" width="44" height="38" alt="logo">
         </a>
-        <div class="navbar__leftside__search">
+        <form action="search" class="navbar__leftside__search">
           <input type="checkbox" id="search__input" class="navbar__leftside__search__chbox">
           <label for="search__input" class="navbar__leftside__search__label">
             <svg class="navbar__leftside__search__label__img" width="28" height="28" viewBox="0 0 28 28"
@@ -29,7 +29,7 @@
           </label>
           <input id="search_text" type="text" placeholder="..." class="navbar__leftside__search__input" required>
           <input type="submit" value="Search" class="navbar__leftside__search__btn">
-        </div>
+        </form>
       </div>
       <div class="navbar__rightside">
         <nav class="navbar__rightside__menu__hover">
@@ -106,77 +106,95 @@
       </section>
     </div>
 
+    <section class="carousel">
+      <button class="carousel__left"></button>
+      <img class="carousel__img" src="img/product/product_img.png" alt="prod_photos">
+      <button class="carousel__right"></button>
+    </section>
 
-    <section class="checkout container">
-      <div class="checkout__lists">
-        <div class="sort__trending__box">
-          <input type="checkbox" class="sort__trending__check" id="trending">
-          <label class="sort__trending__label" for="trending">choose color</label>
-          <ul class="sort__trending__list">
-            <li class="sort__trending__list__item">
-              <input type="checkbox" name="#" id="trending_xs">
-              <label for="trending_xs">xs</label>
-            </li>
-            <li class="sort__trending__list__item">
-              <input type="checkbox" name="#" id="trending_s">
-              <label for="trending_s">s</label>
-            </li>
-            <li class="sort__trending__list__item">
-              <input type="checkbox" name="#" id="trending_m">
-              <label for="trending_m">m</label>
-            </li>
-            <li class="sort__trending__list__item">
-              <input type="checkbox" name="#" id="trending_l">
-              <label for="trending_l">l</label>
-            </li>
-          </ul>
+
+    <section class="checkout__wrapper container">
+      <div class="checkout">
+        <div class="checkout__info">
+          <h4 class="checkout__info__collection">Women Collection</h3>
+            <h3 class="checkout__info__product">moschino cheap and chic</h3>
+            <p class="checkout__info__description">
+              Compellingly actualize fully researched processes before proactiveoutsourcing. Progressively syndicate
+              collaborative architectures before cutting-edge services. Completelyvisualize parallel core competencies
+              rather than exceptional portals.
+            </p>
+            <span class="checkout__price">$561</span>
         </div>
-        <div class="sort__size__box">
-          <input type="checkbox" class="sort__size__check" id="size">
-          <label class="sort__size__label" for="size">choose size</label>
-          <ul class="sort__size__list">
-            <li class="sort__size__list__item">
-              <input type="checkbox" name="#" id="size_xs">
-              <label for="size_xs">xs</label>
-            </li>
-            <li class="sort__size__list__item">
-              <input type="checkbox" name="#" id="size_s">
-              <label for="size_s"> s</label>
-            </li>
-            <li class="sort__size__list__item">
-              <input type="checkbox" name="#" id="size_m">
-              <label for="size_m">m</label>
-            </li>
-            <li class="sort__size__list__item">
-              <input type="checkbox" name="#" id="size_l">
-              <label for="size_l">l</label>
-            </li>
-          </ul>
+        <div class="dropdown">
+          <div class="dropdown__box">
+            <input type="checkbox" class="dropdown__check" id="dropdown">
+            <label class="dropdown__label" for="dropdown"><span class="dropdown__img">choose color</span></label>
+            <ul class="dropdown__list">
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_xs">
+                <label for="dropdown_xs">xs</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_s">
+                <label for="dropdown_s">s</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_m">
+                <label for="dropdown_m">m</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_l">
+                <label for="dropdown">l</label>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__box">
+            <input type="checkbox" class="dropdown__check" id="dropdown_middle">
+            <label class="dropdown__label" for="dropdown_middle"><span class="dropdown__img">choose size</span></label>
+            <ul class="dropdown__list">
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_xs">
+                <label for="dropdown_xs">xs</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_s">
+                <label for="dropdown_s">s</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_m">
+                <label for="dropdown_m">m</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_l">
+                <label for="dropdown">l</label>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown__box">
+            <input type="checkbox" class="dropdown__check" id="dropdown_last">
+            <label class="dropdown__label" for="dropdown_last"><span class="dropdown__img">quantity</span></label>
+            <ul class="dropdown__list">
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_xs">
+                <label for="dropdown_xs">xs</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_s">
+                <label for="dropdown_s">s</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_m">
+                <label for="dropdown_m">m</label>
+              </li>
+              <li class="dropdown__list__item">
+                <input type="checkbox" name="#" id="dropdown_l">
+                <label for="dropdown">l</label>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="sort__trending__box">
-          <input type="checkbox" class="sort__price__check" id="price">
-          <label class="sort__price__label" for="price">quantity</label>
-          <ul class="sort__price__list">
-            <li class="sort__price__list__item">
-              <input type="checkbox" name="#" id="price_xs">
-              <label for="price_xs">xs</label>
-            </li>
-            <li class="sort__price__list__item">
-              <input type="checkbox" name="#" id="price_s">
-              <label for="price_s">s</label>
-            </li>
-            <li class="sort__price__list__item">
-              <input type="checkbox" name="#" id="price_m">
-              <label for="price_m">m</label>
-            </li>
-            <li class="sort__price__list__item">
-              <input type="checkbox" name="#" id="price_l">
-              <label for="price_l">l</label>
-            </li>
-          </ul>
-        </div>
+        <button class="fetured__button">Add to Cart</button>
       </div>
-      <button class="fetured__button">Browse All Products</button>
     </section>
 
 
@@ -188,7 +206,7 @@
             <img class="featured__item__img" src="img/mainpage/fetured_item_img_1.jpg" alt="fetured" width="360"
               height="420">
             <div class="featured__item__text">
-              <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
+              <h3 class="featured__item__title">ELLERY X M'O CAPSULE</h3>
               <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian
                 arbiter
                 of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -204,7 +222,7 @@
             <img class="featured__item__img" src="img/mainpage/fetured_item_img_4.jpg" alt="fetured" width="360"
               height="420">
             <div class="featured__item__text">
-              <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
+              <h3 class="featured__item__title">ELLERY X M'O CAPSULE</h3>
               <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian
                 arbiter
                 of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -220,7 +238,7 @@
             <img class="featured__item__img" src="img/mainpage/fetured_item_img_3.jpg" alt="fetured" width="360"
               height="420">
             <div class="featured__item__text">
-              <p class="featured__item__title">ELLERY X M'O CAPSULE</p>
+              <h3 class="featured__item__title">ELLERY X M'O CAPSULE</h3>
               <p class="featured__item__promo">Known for her sculptural takes on traditional tailoring, Australian
                 arbiter
                 of cool Kym Ellery teams up with Moda Operandi.</p>
