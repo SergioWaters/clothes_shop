@@ -44,10 +44,22 @@ header, main, footer{
 .navbar__leftside {
   display: flex;
 }
+.navbar__leftside__gohome:hover{
+  transform: scale(115%);
+  transition: .5s;
+}
 .navbar__leftside__gohome{
   height: 38px;
   width: 44px;
   margin-right: 41px;
+  transition: .5s;
+}
+.navbar__leftside__search:hover
+.navbar__leftside__search__label__img{
+  transition: .5s;
+  fill: #f16d7f;
+  transition: .5s;
+  transform: scale(115%);
 }
 .navbar__leftside__search {
   position: relative;
@@ -108,8 +120,13 @@ header, main, footer{
   transition: .5s;
 
 }
+.navbar__rightside__menu__hover:hover{
+  transform: scale(115%);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+  }
 .navbar__rightside__menu__hover {
   position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
 }
 .navbar__rightside__menu__hover:hover 
 .navbar__rightside__menu__burger,
@@ -118,7 +135,6 @@ header, main, footer{
 .navbar__rightside__menu__hover:hover 
 .navbar__rightside__menu__burger::before {
   background-color: #f16d7f;
-  transition: .5s;
 }
 .burger__input{
   display: none;
@@ -237,11 +253,19 @@ header, main, footer{
   list-style-type: none;
 }
 /* END OF POPUP<---------------------- */
+.navbar__rightside__account:hover{
+  transform: scale(115%);
+  transition: .5s;
+}
 .navbar__rightside__account {
   margin: 0 33px;
   fill: #e8e8e8;
   height: 29px;
-  width: 32px;
+  width: 32px;  
+  transition: .5s;
+}
+.navbar__rightside__cart:hover{
+  transform: scale(115%);
   transition: .5s;
 }
 .navbar__rightside__cart { 
@@ -252,8 +276,7 @@ header, main, footer{
   transition: .5s;
 }
 .navbar__rightside__cart:hover,
-.navbar__rightside__account:hover,
-.navbar__leftside__search__label__img:hover{  
+.navbar__rightside__account:hover{  
   fill: #f16d7f;
   transition: .5s;
 }
@@ -1092,7 +1115,16 @@ header, main, footer{
   max-height: 777px;
   background-color: #f7f7f7;
 }
-.carousel__img {
+.carousel__img{
+  transition: .7s;
+}
+.carousel__img:hover {
+  display: block;
+  transform: scale(150%);
+  transform-origin: center top;
+  transition: .5s;
+  z-index: 1001;
+  border-radius: 30px;
 }
 .carousel__left,
 .carousel__left:active,
@@ -1568,4 +1600,175 @@ header, main, footer{
   height: 1px;
   top: -17px;
   left: 0px;
+}
+ /* Account Registration <------ */
+.registration {
+ height: 675px;
+ padding: 60px 0 96px 0;
+ display: flex;
+}
+.registration__form {
+  width: 360px;
+  height: 515px; 
+}
+.registration__name__box{
+
+}
+.registration__title {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+.registration__input {
+  width: 360px;
+  height: 45px;
+  padding: 17px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+
+}
+.registration__radio__box{
+  margin-bottom: 30px;
+}
+.registration__radio {
+  margin-right: 10px;
+  height: 17px;
+  width: 17px;
+}
+.registration__radio__label{
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+}
+.registration__login__box{
+  margin-bottom: 40px;
+}
+.registration__passrules {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #b1b1b1;
+}
+.registration__button:hover{
+  background-color: #fff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+  transition: .5s;
+}
+.registration__button:active,
+.registration__button {
+  padding: 15px 29px 15px 29px;
+  width: 167px;
+  height: 50px;
+  background-color: #f16d7f;
+  color: #fff;
+  border: #f16d7f;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: left;
+  transition: .7s;
+}
+/* {
+  background-color: #f16d7f;
+  color: #fff;
+  border: #f16d7f;
+} */
+.registration__button__relay{
+  position: relative;
+}
+.registration__button:hover ~
+.registration__button__arrow,
+.registration__button:hover ~
+.registration__button__arrow::before,
+.registration__button:hover ~
+.registration__button__arrow::after{
+  background-color: #f16d7f;
+  transition: .5s;
+}
+.registration__button__arrow{
+  position: absolute;
+  height: 1px;
+  width: 17px;
+  background-color: #fff;
+  top: 25px;
+  left: 120px;
+  transition: .7s;
+}
+.registration__button:active ~
+.registration__button__arrow,
+.registration__button:active ~
+.registration__button__arrow::before,
+.registration__button:active ~
+.registration__button__arrow::after{
+  background-color: #fff;
+  transition: .5s;
+}
+.registration__button__arrow::before{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  transform: rotate(45deg);
+  transform-origin: right;
+  right: 0px;
+  background-color: #fff;
+  transition: .7s;
+}
+.registration__button__arrow::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 10px;
+  transform: rotate(-45deg);
+  transform-origin: right;
+  right: 0px;
+  background-color: #fff;
+  transition: .7s;
+}
+.registration__perks {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin-left: 130px;  
+}
+.registration__perks__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+}
+.registration__perks__description {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  margin: 20px 0 20px 0;
+}
+.registration__perks__list {
+}
+.registration__perks__list__item {
+  position: relative;
+  padding: 0px 0px 16px 45px;
+}
+.registration__perks__list__item::after{
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(-45deg);
+  transform-origin: 32px -8px;
+  left: 0px;
+}
+.registration__perks__list__item::before{
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+  transform: rotate(45deg);
+  transform-origin: -35px -37px;
 }
